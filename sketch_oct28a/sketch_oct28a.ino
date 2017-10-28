@@ -8,8 +8,8 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  digitalWrite(ledPin, HIGH);
-  delay(500);
-  digitalWrite(ledPin, LOW);
-  delay(500);
+  analogWrite(ledPin, random(255));
+  delay(random(500));
+//  analogWrite(ledPin, 0);
+//  delay(random(500));
 }
